@@ -13,12 +13,12 @@ cask "imageloom" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "ImageLoom.app"
 
   postflight do
-    # The app is ad-hoc signed but not notarized: clear the quarantine flag so Gatekeeper does not block the first launch.
+    # Ad-hoc signed, not notarized: clear the quarantine flag so Gatekeeper does not block the first launch.
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/ImageLoom.app"]
   end
