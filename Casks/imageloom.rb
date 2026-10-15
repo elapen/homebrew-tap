@@ -1,6 +1,6 @@
 cask "imageloom" do
-  version "1.0.0"
-  sha256 "33d2c13ed9292c8a9c0e9d1d08c788b0f2d65e2af293cb0ff22f24df7f45c0cd"
+  version "1.1.0"
+  sha256 "0fde70905923b0985952ad3ae3ce98705d4ab1e2a15c9cf6425ccefb768f545d"
 
   url "https://github.com/elapen/imageloom/releases/download/v#{version}/ImageLoom-#{version}-macOS-arm64.dmg"
   name "ImageLoom"
